@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatingBar">
+        <!--星星间距-->
+        <attr name="starDistance" format="dimension" />
+        <!--星星大小-->
+        <attr name="starSize" format="dimension" />
+        <!--星星个数-->
+        <attr name="starCount" format="integer" />
+        <!--星星空图-->
+        <attr name="starEmpty" format="reference" />
+        <!--星星满图-->
+        <attr name="starFill" format="reference" />
+
+        <!--<attr name="canEdit" format="boolean" />-->
+        <!--&lt;!&ndash;是否可以点击选择，有时候纯展示用不需要选择&ndash;&gt;-->
+        <!--<attr name="widthAndHeight" format="dimension" />-->
+        <!--&lt;!&ndash;单个星星的宽度&ndash;&gt;-->
+        <!--<attr name="dividerWidth" format="dimension" />-->
+        <!--&lt;!&ndash;星星左右间距&ndash;&gt;-->
+        <!--<attr name="countSelected" format="integer" />-->
+        <!--&lt;!&ndash;当前已选中的星星个数&ndash;&gt;-->
+        <!--<attr name="stateResId" format="reference" />-->
+        <!--&lt;!&ndash;单个星星不同状态下对应的图标&ndash;&gt;-->
+        <!--<attr name="differentSize" format="boolean" />-->
+        <!--&lt;!&ndash;是否支持大小不等星星样式&ndash;&gt;-->
+
+
+    </declare-styleable>
+    <declare-styleable name="AutofitTextView">
+        <!-- Minimum size of the text. -->
+        <attr name="minTextSize" format="dimension" />
+        <!-- Amount of precision used to calculate the correct text size to fit within its
+        bounds. Lower precision is more precise and takes more time. -->
+        <attr name="precision" format="float" />
+        <!-- Defines whether to automatically resize text to fit to the view's bounds. -->
+        <attr name="sizeToFit" format="boolean" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#FFEEF2F5"
+    android:layout_height="match_parent">
+    <com.jhcms.common.widget.GridViewForScrollView
+        android:overScrollMode="never"
+        android:id="@+id/goods_gv"
+        android:paddingLeft="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:layout_marginLeft="11dp"
+        android:horizontalSpacing="9dp"
+        android:verticalSpacing="5dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFEEF2F5"
+        ></com.jhcms.common.widget.GridViewForScrollView>
+
+
+
+</LinearLayout>

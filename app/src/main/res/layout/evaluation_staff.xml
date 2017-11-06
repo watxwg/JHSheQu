@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Staff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <View
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/shopcar_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_15"
+            android:text="配送打分"
+            android:textColor="@color/third_txt_color"
+            android:textSize="@dimen/sp_12" />
+
+        <View
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/shopcar_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_eva_staff_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shap_bg_ripples_line"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="送达时间"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_eva_staff_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/dp_8"
+            android:text="送达时间"
+            android:textColor="@color/color_blue"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:id="@+id/songdaImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_arrow_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="配送服务"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/sp_12" />
+
+        <RatingBar
+            android:id="@+id/rb_eva_staff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"/>
+
+        <!--<com.jhcms.common.widget.RatingBar-->
+            <!--xmlns:lxhRatingBar="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/rb_eva_staff"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--lxhRatingBar:starDistance="5dp"-->
+            <!--lxhRatingBar:starEmpty="@mipmap/star_big_gray"-->
+            <!--lxhRatingBar:starFill="@mipmap/star_big_orange"-->
+            <!--lxhRatingBar:starSize="30dp" />-->
+
+
+
+    </LinearLayout>
+</LinearLayout>

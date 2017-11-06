@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <com.classic.common.MultipleStatusView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/multiplestatusview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/background"
+        app:emptyView="@layout/address_empty_view"
+        app:loadingView="@layout/custom_loading_view"
+        tools:context="com.jhcms.waimaiV3.activity.ConsigneeAddressActivity">
+
+
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+    </com.classic.common.MultipleStatusView>
+
+    <TextView
+        android:id="@+id/tv_add_adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sp_12"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_30"
+        android:background="@drawable/shap_bg_theme_white_radius"
+        android:gravity="center_horizontal"
+        android:text="添加收货地址"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16" />
+</LinearLayout>
+
+

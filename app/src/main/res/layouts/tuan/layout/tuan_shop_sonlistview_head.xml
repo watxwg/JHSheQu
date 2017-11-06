@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/headview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shap_bg_ripples_line"
+    android:padding="@dimen/dp_12">
+
+    <ImageView
+        android:id="@+id/iv_shop_logo"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@mipmap/home_banner_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_shop_logo"
+        android:layout_alignTop="@+id/iv_shop_logo"
+        android:layout_toRightOf="@+id/iv_shop_logo"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_shop_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:paddingRight="@dimen/dp_5"
+                android:singleLine="true"
+                android:text="大拇指美食坊"
+                android:textColor="@color/title_color"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <com.coorchice.library.SuperTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tv_tuan"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:gravity="center"
+                    android:text="团"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"
+                    app:solid="#0fd189" />
+
+                <com.coorchice.library.SuperTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tv_maidan"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="买"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"
+                    app:solid="#f97181" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_per"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人均:--"
+                android:textColor="@color/third_txt_color"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.jhcms.tuangou.CustomView.StarBar
+                android:id="@+id/starBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/display"
+                android:layout_gravity="left|center"
+                ratingbar:starCount="5"
+                ratingbar:starDistance="5dp"
+                ratingbar:starEmpty="@mipmap/star_big_gray"
+                ratingbar:starFill="@mipmap/star_big_orange"
+                ratingbar:starSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_shop_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="5分"
+                android:textColor="@color/third_txt_color"
+                android:textSize="@dimen/sp_12" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_shop_cate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="美食"
+                android:textColor="@color/third_txt_color"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_shop_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天鹅湖万达2天鹅湖万达2天鹅湖万达天鹅湖万达2天鹅湖万达2天鹅湖万达天鹅湖万达2天鹅湖万达2天鹅湖万达"
+                android:maxLines="1"
+                android:maxEms="10"
+                android:ellipsize="end"
+                android:textColor="@color/third_txt_color"
+                android:textSize="@dimen/sp_12" />
+            <TextView
+                android:id="@+id/tv_shop_juli"
+                android:paddingLeft="@dimen/dp_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.3km"
+                android:textColor="@color/third_txt_color"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/mall_Theme"
+        android:drawable="@drawable/mall_tag_bg_select"
+        android:state_checked="true"></item>
+    <item android:drawable="@drawable/normal_bg"></item>
+</selector>

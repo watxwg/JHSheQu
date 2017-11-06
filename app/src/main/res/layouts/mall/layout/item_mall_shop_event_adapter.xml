@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/bg_round_white"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:id="@+id/ActivityImage"
+        android:layout_width="match_parent"
+        android:src="@mipmap/mall_shop_bg"
+        android:scaleType="fitXY"
+        android:layout_height="200dp" />
+    <RelativeLayout
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200">
+        <ImageView
+            android:id="@+id/activitystatu_iv"
+            android:layout_marginTop="10dp"
+            android:layout_width="60dp"
+            android:src="@mipmap/label_activity_ing"
+            android:layout_height="18dp" />
+        <TextView
+            android:id="@+id/ActivityContent"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#99000000"
+            android:text="大显国际家装抢购节"
+            android:textColor="@color/white"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/dp_12"
+            android:textSize="14dp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

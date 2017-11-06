@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="100dp">
+    <ImageView
+        android:id="@+id/shopimage_iv"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_width="60dp"
+        android:layout_height="@dimen/dp_60"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/shopname_tv"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="嘻哈小卖部"
+        android:textColor="@color/title_color"
+        android:textSize="12dp"
+        android:gravity="center"
+        />
+
+</LinearLayout>

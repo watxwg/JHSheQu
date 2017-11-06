@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jhcms.waimaiV3">
+
+    <!-- 打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <!-- 高德地图权限 -->
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- //定位包、导航包需要的额外权限（注：基础权限也需要） -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- Required -->
+    <permission
+        android:name="${applicationId}.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="${applicationId}.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".MyApplication"
+        android:excludeFromRecents="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 高德key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="f6b21e951c38fda5875a19d145dd7c02" />
+        <!-- 声明定位service -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <!-- GoogleMap Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAs9zyMI-NQm1DPAMjNUqy4adNbqL2zN2A" />
+
+        <activity
+            android:name="com.jhcms.shequ.activity.MainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 主体部分 -->
+        <!-- 登录界面 -->
+        <activity android:name="com.jhcms.shequ.activity.LoginActivity" />
+        <!-- 注册界面 -->
+        <activity android:name="com.jhcms.shequ.activity.AccountActivity" />
+        <!-- 换绑手机界面 -->
+        <activity android:name="com.jhcms.shequ.activity.ChangeMobileActivity" />
+        <!-- 忘记密码、更换密码界面 -->
+        <activity android:name="com.jhcms.shequ.activity.ChangePasswordActivity" />
+        <!-- 快捷登录界面 -->
+        <activity android:name="com.jhcms.shequ.activity.QuickLoginActivity" />
+        <!-- 搜索商品界面 -->
+        <activity android:name="com.jhcms.shequ.activity.WaiMaiSearchGoodsActivity" />
+        <!-- 搜索商品界面 -->
+        <activity android:name="com.jhcms.shequ.activity.SearchMerchantGoodsActivity" />
+        <!-- 个人中心界面 -->
+        <activity android:name="com.jhcms.shequ.activity.PersonalActivity" />
+        <!-- 修改昵称界面 -->
+        <activity android:name="com.jhcms.shequ.activity.ChangeNameActivity" />
+        <!-- 地图搜索界面 -->
+        <activity android:name="com.jhcms.shequ.activity.SearchMapActivity" />
+        <!-- 修改昵称 -->
+        <activity android:name="com.jhcms.shequ.activity.RenameActivity" />
+
+        <!-- 外卖部分 -->
+        <activity
+            android:name=".activity.WaiMaiMainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.WaiMaiBusinessListActivity" />
+        <activity android:name=".activity.ConsigneeAddressActivity" />
+        <activity android:name=".activity.AddAddressActivity" />
+        <activity android:name=".activity.MineCollectActivity" />
+        <activity android:name=".activity.MineCouponsActivity" />
+        <activity android:name=".activity.OnSiteServiceActivity" />
+        <activity android:name=".activity.OnSiteServiceListActivity" />
+        <activity android:name=".activity.WaiMaiShopActivity" />
+        <activity
+            android:name=".activity.WaiMaiShopAnnouncementActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".activity.WaiMaiShopDetailActivity" />
+        <activity
+            android:name=".activity.ConfirmOrderActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.OrderDetailsActivity" />
+        <activity android:name=".activity.OrderDetailsGMSActivity" />
+        <activity
+            android:name=".activity.MerchantEvaluationActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".activity.PicturePreviewActivity" />
+
+        <!-- 团购部分 -->
+
+        <activity
+            android:name="com.jhcms.tuangou.activity.TuanGouMainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="com.jhcms.mall.activity.MallActivity" />
+        <activity android:name="com.jhcms.tuangou.activity.TuanProductDetailsActivity" />
+        <activity android:name="com.jhcms.tuangou.activity.TuanShopGetailsTxtActivity" />
+        <activity android:name="com.jhcms.tuangou.activity.TuanShopDetailActivity" />
+        <activity android:name="com.jhcms.tuangou.activity.TuanShopAllGoodsActivity" />
+        <activity android:name="com.jhcms.tuangou.activity.TuanSortAll" />
+        <activity
+            android:name="com.jhcms.tuangou.activity.TuanSearchGoodsActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name="com.jhcms.tuangou.activity.TuanBuyOlderActivity" />
+        <activity android:name="com.jhcms.tuangou.activity.TuanOrderDetailsActivity" />
+        <activity android:name="com.jhcms.tuangou.activity.TuanBulkVolumeActivity" />
+        <activity android:name="com.jhcms.tuangou.activity.TuanOrderEvaluateActivity" />
+        <activity android:name="com.jhcms.tuangou.activity.TuanRequestPayoutActivity" />
+        <activity android:name="com.jhcms.tuangou.activity.TuanOfferToPayActivity" />
+        <activity android:name="com.jhcms.tuangou.activity.TuanFavorableBuyOrderActvity" />
+        <activity android:name="com.jhcms.tuangou.activity.TuanFavorableBuyOrderDetailsActivity" />
+        <activity android:name="com.jhcms.tuangou.activity.GroupOfferToPayOrderDeatail" />
+        <activity android:name="com.jhcms.tuangou.activity.LookTuanOrderMerchantEvaluationActivity" />
+
+        <!-- 商城部分 -->
+        <activity android:name="com.jhcms.mall.activity.MallSearchActivty" />
+        <activity android:name="com.jhcms.mall.activity.MallHotShopSellerRankingActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallTypeSearchActivty" />
+        <activity android:name="com.jhcms.mall.activity.MallProductDetailsActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallCouponActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallShopDetailsActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallShopEventActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallShopDivisionActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallConfirmOrderActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallPaySuccessActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallMyFavoriteActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallFavoritesGoodsActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallMembershipCardActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallShippingAddressActivty" />
+        <activity android:name="com.jhcms.mall.activity.MallMyDiscountCouponActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallAddNewAddressActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallMyOrderActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallMyOrderStatudDtailsActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallSalesAfterActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallRefundActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.jhcms.waimaiV3.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider>
+        <!-- TODO 微信支付 start -->
+        <receiver android:name=".wxapi.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <!-- TODO 微信 end -->
+
+
+        <!-- TODO 支付宝支付 start -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <!-- TODO 支付宝支付 end -->
+        <activity android:name=".activity.ToPayActivity" />
+        <activity android:name=".activity.ComplainActivity" />
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".activity.GuideActivity" />
+        <activity
+            android:name=".activity.SelectAddressActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activity.WaimaiBalanceActivity" />
+        <activity android:name=".activity.RechargeActivity" />
+
+        <!-- TODO 友盟key -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5950780ccae7e701f7000222" />
+        <!-- TODO 配置QQ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".activity.ShopMapActivity" />
+        <activity android:name=".activity.UserMsgActivity" />
+        <activity android:name="com.jhcms.shequ.activity.WaiMaiImageCodeActivity" />
+        <activity android:name=".activity.SelectCityActivity" />
+        <activity
+            android:name=".activity.WaiMaiInStoreSearchActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".activity.LookMerchantEvaluationActivity" />
+        <!-- 极光配置 -->
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </service>
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category android:name="${applicationId}" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <!-- SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+        <!-- User defined. 用户自定义的广播接收器 -->
+        <receiver
+            android:name=".sersice.JPushBroadcast"
+            android:enabled="true">
+            <intent-filter>
+
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+
+        <activity android:name=".activity.ShopMapActivityGMS" />
+        <activity android:name="com.jhcms.tuangou.activity.GraphicDetailsActivity" />
+        <activity android:name="com.jhcms.tuangou.activity.TuanConfirmOrderActivity" />
+        <activity android:name=".activity.ToPayNewActivity" />
+        <activity android:name="com.jhcms.tuangou.activity.MerchantAlbumActivity" />
+        <activity android:name="com.jhcms.tuangou.activity.TuanUserRatingActivity" />
+        <activity android:name="com.jhcms.tuangou.activity.TuanToPayActivity" />
+        <activity android:name="com.jhcms.tuangou.activity.TuanSearchActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallShopProduceListActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallTopProductShopListActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallShopDetailCatagoryListActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallShopDetailCatagoryActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallCouponListActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallProductDetailActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallActivityDetailActivity" />
+        <activity android:name="com.jhcms.mall.activity.MallOrderDetailAcitivity" />
+        <activity android:name="com.jhcms.mall.activity.MallRefundHandlingActivity" />
+        <activity android:name="com.jhcms.mall.activity.ApplyForRefundActivity" />
+        <activity android:name="com.jhcms.mall.activity.LogisticsDetailActivity" />
+        <activity android:name="com.jhcms.shequ.activity.BankListActivity" />
+        <activity android:name="com.jhcms.shequ.activity.AddBankActivity" />
+        <activity android:name="com.jhcms.run.activity.RunMainActivity"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.jhcms.run.activity.RunHelpDeloveryActivity" />
+        <activity android:name="com.jhcms.run.activity.RunHelpBuyActivity" />
+        <activity android:name="com.jhcms.run.activity.SelectAddressActivity" />
+        <activity android:name="com.jhcms.run.activity.ChargeExplainActivity" />
+        <activity android:name="com.jhcms.run.activity.BuyAddressSetActivity"></activity>
+        <activity android:name="com.jhcms.run.activity.RunOrderDetailsActivity" />
+        <activity android:name="com.jhcms.run.activity.RunOrderEvaluationActivity" />
+        <activity android:name="com.jhcms.run.activity.RunOrderCommentActivity"></activity>
+    </application>
+
+</manifest>

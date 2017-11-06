@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.jhcms.mall.activity.MallSearchActivty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dp_29"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:src="@mipmap/mall_btn_top_back"/>
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_mall_search"
+            android:layout_marginRight="@dimen/dp_12"
+            >
+            <TextView
+                android:id="@+id/tv_sort"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="商品"
+                android:textColor="@color/mall_black_second"
+                android:gravity="center"
+                android:textSize="@dimen/mall_font_14"
+                android:drawableRight="@mipmap/mall_search_arrow_down"
+                android:layout_marginRight="@dimen/dp_10"
+                />
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/mall_搜索商家"
+                android:textColor="@color/mall_gray"
+                android:textSize="@dimen/mall_font_14"
+                android:gravity="center_vertical"
+                />
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:src="@mipmap/mall_btn_search_reset"
+                android:layout_width="@dimen/dp_20"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"/>
+            <FrameLayout
+                android:id="@+id/fm_search"
+                android:layout_width="@dimen/dp_36"
+                android:layout_height="@dimen/dp_30"
+                android:visibility="gone"
+                android:background="@drawable/bg_mall_search_selector">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@mipmap/mall_nav_btn_search_gray"
+                    android:layout_width="@dimen/dp_13"
+                    android:layout_height="@dimen/dp_13" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

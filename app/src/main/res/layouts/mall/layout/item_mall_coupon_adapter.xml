@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:gravity="center|left"
+    >
+    <LinearLayout
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/bg_white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/Shop_iv"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:src="@mipmap/ic_launcher"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/ShopName_tv"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+            android:text="【美的】5元特惠充值券"
+            android:textColor="@color/title_color"
+            android:gravity="center|left"
+            android:textSize="14dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dp_5"
+          >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="￥5"
+                        android:id="@+id/Shopmoney_tv"
+                        android:textColor="@color/color_yan"
+                        android:textSize="12dp"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/shopmoneycontent_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="满20元可用"
+                        android:textColor="@color/third_txt_color"
+                        android:textSize="12dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="9dp"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/mShoptime"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="截止：2016-12-18"
+                    android:textColor="@color/third_txt_color"
+                    android:gravity="center|left"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/shopGet"
+                android:layout_width="70dp"
+                android:layout_height="@dimen/dp_30"
+                android:text="立即领取"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/mall_red_bag"
+                android:layout_marginRight="@dimen/dp_10"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

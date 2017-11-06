@@ -1,0 +1,222 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/theme_color</item>
+        <item name="colorPrimaryDark">#009000</item>
+        <item name="colorAccent">@color/theme_color</item>
+    </style>
+    <!-- 评分组件 -->
+    <style name="eva_rating_small" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar_small</item>
+        <item name="android:minHeight">12dp</item>
+        <item name="android:maxHeight">12dp</item>
+    </style>
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/room_rating_bar</item>
+        <item name="android:minHeight">22dp</item>
+        <item name="android:maxHeight">22dp</item>
+    </style>
+
+    <style name="eva_rating_big" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar_big</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:maxHeight">30dp</item>
+    </style>
+    <style name="PopupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+
+    <!-- Sharepopwindow_anim_style -->
+    <style name="Sharepopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/sharepopshow_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/sharepophidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+
+    <style name="TuanTabLayoutTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/dp_16</item>
+    </style>
+
+    <!--android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="立减优惠"
+                    android:textColor="@drawable/text_color"-->
+    <style name="popu_choose_filter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@drawable/text_color</item>
+    </style>
+
+    <!--团购订单详情-订单详情-->
+
+
+    <!--android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_marginTop="@dimen/dp_050"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/dp_12"
+                            android:paddingRight="@dimen/dp_12"-->
+
+    <style name="tuan_order_detail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginTop">@dimen/dp_050</item>
+        <item name="android:paddingLeft">@dimen/dp_12</item>
+        <item name="android:paddingRight">@dimen/dp_12</item>
+    </style>
+
+    <!--订单详情中订单状态-->
+    <!--android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/dp_8"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/sp_16"-->
+    <style name="order_status_supertv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dp_8</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <!--android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shap_bg_ripples_line"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_15"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/sp_16"-->
+    <!--订单详情-拨打电话-->
+    <style name="CallPhoneStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shap_bg_ripples_line</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/dp_15</item>
+        <item name="android:paddingTop">@dimen/dp_15</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <!--新增一个item，用于控制menu-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <!--Toolbar 菜单样式 菜单背景颜色-->
+        <item name="android:colorBackground">@color/theme_color</item>
+    </style>
+    <!--修改toolbar弹出菜单的位置-->
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    </style>
+
+    <style name="transparentText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">#00000000</item>
+    </style>
+    <!-- Toolbar主题设置-->
+    <style name="ToolBarTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <!-- 更换Toolbar OVerFlow menu icon -->
+        <!--<item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.More</item>-->
+        <!--对应的就是右上角三个圆点的颜色-->
+        <item name="android:textColorSecondary">#FFFFFF</item>
+        <!--Toolbar 标题文字颜色-->
+        <item name="android:textColorPrimary">@color/white</item>
+        <!-- 设置 toolbar 溢出菜单和自定义文字的颜色 -->
+        <item name="android:textColor">@color/white</item>
+        <!-- 设置toolbar 菜单的字体大小和溢出菜单文字大小-->
+        <item name="android:textSize">14sp</item>
+        <!-- 设置 toobar上菜单文字的颜色 -->
+        <item name="android:actionMenuTextColor">@color/white</item>
+    </style>
+
+
+    <style name="translucentActivity">
+        <item name="android:windowBackground">@color/translucent_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="MenuSectionHeader">
+        <item name="android:padding">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/menu_section_header</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="mall_baseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="DefaultAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/exit_anim</item>
+    </style>
+    <!--商城text的样式-->
+    <style name="mall_text_ww_12_333333">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/mall_font_12</item>
+        <item name="android:textColor">@color/mall_black_second</item>
+    </style>
+    <style name="mall_text_ww_12_9999999" parent="mall_text_ww_12_333333">
+        <item name="android:textColor">@color/mall_color_999999</item>
+    </style>
+    <style name="text_ww_15_999999" parent="mall_text_ww_12_9999999">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+    <style name="text_ww_15_333333" parent="text_ww_15_999999">
+        <item name="android:textColor">@color/mall_black</item>
+    </style>
+    <style name="text_ww_14_333333" parent="mall_text_ww_12_333333">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+    <style name="text_ww_14_999999" parent="mall_text_ww_12_9999999">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+    <style name="text_ww_13_333333" parent="mall_text_ww_12_333333">
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+    <style name="run_checkbox_style" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/run_checkbox_selector</item>
+    </style>
+</resources>

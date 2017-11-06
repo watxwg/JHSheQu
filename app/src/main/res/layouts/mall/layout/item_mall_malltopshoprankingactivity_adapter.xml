@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingLeft="12dp"
+    android:paddingTop="5dp"
+    android:paddingRight="13dp"
+    android:paddingBottom="12dp"
+   android:background="@color/white"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/shopnumber_tv"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:background="@color/red"
+            android:text="1"
+            android:textColor="#FFFFFFFF"
+            android:textSize="12dp"
+            android:gravity="center"
+            />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/shopImage"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginLeft="12dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_launcher"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/Shopname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="DQ官方旗舰店"
+                android:textColor="#FF222222"
+                android:textSize="14dp"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/TopShopAttention"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="关注度：524625"
+                android:textColor="#FF999999"
+                android:textSize="12dp"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"/>
+            
+        </LinearLayout>
+        <TextView
+            android:id="@+id/comeinshop"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="进店"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#FF666666"
+            android:textSize="12dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/bg_mall"
+            />
+
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_launcher"/>
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_launcher"/>
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_launcher"/>
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_launcher"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:id="@+id/all_rlay"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <com.jhcms.common.widget.RoundImageView
+                android:id="@+id/iv_shop_head"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_margin="@dimen/dp_15"
+                android:src="@mipmap/pic_pro_big" />
+
+            <LinearLayout
+                android:id="@+id/layshop"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_shop_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_12"
+                    android:drawableRight="@mipmap/icon_arrow_right"
+                    android:gravity="center_vertical"
+                    android:text="功夫煲仔功夫煲仔功夫煲仔"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_order_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="2016-11-15 10:55"
+                    android:textColor="@color/third_txt_color"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_15"
+                android:layout_gravity="center"
+                android:text="待付款"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/order_commodity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_15"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="咖喱鸡块煲仔饭等2件商品"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_order_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_15"
+                android:text="￥15"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@color/white"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+            <TextView
+                android:id="@+id/left2_tv"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shap_bg_line_white_radius"
+                android:gravity="center_horizontal"
+                android:text="催单"
+                android:textColor="@color/title_color" />
+            <TextView
+                android:id="@+id/left1_tv"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shap_bg_line_white_radius"
+                android:gravity="center_horizontal"
+                android:text="催单"
+                android:textColor="@color/title_color" />
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shap_bg_line_white_radius"
+                android:gravity="center_horizontal"
+                android:text="催单"
+                android:textColor="@color/title_color" />
+
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sp_10"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/shap_bg_line_white_radius"
+                android:gravity="center_horizontal"
+                android:text="确认送达"
+                android:textColor="@color/title_color" />
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@drawable/waimai_red_radio_bg"
+                android:visibility="visible"
+                android:id="@+id/laytime"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_5"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/color_yan"
+                    android:text="去支付"
+                    android:gravity="center"
+                    />
+                <cn.iwgang.countdownview.CountdownView
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:id="@+id/countdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:isHideTimeBackground="true"
+                    app:isShowMinute="true"
+                    app:isShowSecond="true"
+                    app:isTimeTextBold="true"
+                    app:suffixGravity="center"
+                    app:suffixTextColor="@color/red"
+                    app:suffixTextSize="12sp"
+                    app:timeBgBorderRadius="@dimen/dp_5"
+                    app:timeBgColor="@color/white"
+                    app:timeTextColor="@color/red"
+                    app:suffixMinute="分"
+                    app:suffixSecond="秒"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/tuan_offer_to_pay_selected_bag" android:state_selected="true" />
+    <item android:drawable="@drawable/tuan_tuan_offer_to_pay_normal_bag"/>
+</selector>

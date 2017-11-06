@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.jhcms.waimaiV3.activity.WaiMaiShopAnnouncementActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18" />
+        <!--shap_bg_line_radius-->
+        <!--shap_bg_theme_radius-->
+        <com.coorchice.library.SuperTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_shop_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_3"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_10"
+            app:corner="@dimen/dp_3" />
+
+        <RatingBar
+            android:id="@+id/rb_service"
+            style="@style/eva_rating_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_50"
+            android:paddingRight="@dimen/dp_50">
+
+            <View
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_050"
+                android:layout_weight="1"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="商家活动"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18" />
+
+            <View
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_050"
+                android:layout_weight="1"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/all_youhui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_30"></LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_50"
+            android:paddingRight="@dimen/dp_50">
+
+            <View
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_050"
+                android:layout_weight="1"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="商家公告"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18" />
+
+            <View
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_050"
+                android:layout_weight="1"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_120"
+            android:overScrollMode="never"
+            android:paddingLeft="@dimen/dp_30"
+            android:paddingRight="@dimen/dp_30"
+            android:paddingTop="@dimen/sp_10"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/tv_announcment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容…"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+        </ScrollView>
+
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_50"
+            android:src="@mipmap/index_btn_close" />
+
+
+    </LinearLayout>
+</LinearLayout>

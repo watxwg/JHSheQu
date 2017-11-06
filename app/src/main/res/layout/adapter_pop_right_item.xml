@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/child_classify_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="麻辣烫"
+            android:textColor="@color/selecttextcolor"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:id="@+id/selected"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_selected" />
+    </RelativeLayout>
+
+</LinearLayout>

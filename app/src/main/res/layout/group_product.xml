@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_10"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="•"
+        android:paddingRight="@dimen/dp_5"
+        android:textColor="@color/second_txt_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_group_product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="免费提供蜡烛1包+刀1把+小盘1包"
+        android:textColor="@color/second_txt_color"
+        android:textSize="12sp" />
+</LinearLayout>

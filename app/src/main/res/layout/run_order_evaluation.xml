@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_evaluation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_12"
+        android:text="@string/评价信息" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_order_evaluation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="wrap_content"
+            android:text="@string/我的评价"
+            android:textColor="@color/third_txt_color"
+            android:textSize="@dimen/sp_14" />
+
+        <RatingBar
+            android:id="@+id/rb_evaluation"
+            style="@style/Base.Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:layout_toLeftOf="@+id/iv"
+            android:layout_gravity="right"
+            android:rating="1.0"
+            android:stepSize="1" />
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_arrow_right" />
+
+    </RelativeLayout>
+</LinearLayout>

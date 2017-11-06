@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mall_shop_produce_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mall_color_eaeff3"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.jhcms.mall.activity.MallShopProduceListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dp_29"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:src="@mipmap/mall_btn_top_back" />
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/bg_mall_search"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_sort"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dp_10"
+                android:drawableRight="@mipmap/mall_search_arrow_down"
+                android:gravity="center"
+                android:text="商品"
+                android:textColor="@color/mall_black_second"
+                android:textSize="@dimen/mall_font_14" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/mall_搜索商家"
+                android:textColor="@color/mall_gray"
+                android:textSize="@dimen/mall_font_14" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/mall_btn_search_reset"
+                android:visibility="invisible" />
+
+            <FrameLayout
+                android:id="@+id/fm_search"
+                android:layout_width="@dimen/dp_36"
+                android:layout_height="@dimen/dp_30"
+                android:background="@drawable/bg_mall_search_selector"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_13"
+                    android:layout_height="@dimen/dp_13"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/mall_nav_btn_search_gray" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_12"
+            android:text="@string/mall_取消"
+            android:textColor="@color/mall_black_second"
+            android:textSize="@dimen/mall_font_14"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_select_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mall_size_44dp"
+                android:background="@color/white">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_fenlei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/mall_space_3dp"
+                        android:drawableRight="@mipmap/mall_arrow_down"
+                        android:text="@string/mall_分类"
+                        android:textColor="@color/mall_black"
+                        android:textSize="@dimen/mall_font_16" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_zonghe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/mall_space_3dp"
+                        android:drawableRight="@mipmap/mall_arrow_down"
+                        android:text="@string/mall_综合"
+                        android:textColor="@color/mall_black"
+                        android:textSize="@dimen/mall_font_16" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/mall_space_3dp"
+                        android:drawableRight="@mipmap/mall_arrow_top_down"
+                        android:text="@string/mall_价格"
+                        android:textColor="@color/mall_black"
+                        android:textSize="@dimen/mall_font_16" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/mall_white_devider" />
+
+                <ImageView
+                    android:id="@+id/iv_list_style"
+                    android:layout_width="@dimen/dp_18"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_13"
+                    android:layout_marginRight="@dimen/dp_13"
+                    android:src="@mipmap/mall_list_style_double" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.liaoinstan.springview.widget.SpringView
+                    android:id="@+id/spring"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_product_shop_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </android.support.v7.widget.RecyclerView>
+                </com.liaoinstan.springview.widget.SpringView>
+
+
+
+                <View
+                    android:id="@+id/v_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#662b2b2b"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_search_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+        </android.support.v7.widget.RecyclerView>
+    </FrameLayout>
+</LinearLayout>

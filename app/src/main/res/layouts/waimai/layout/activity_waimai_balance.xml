@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.classic.common.MultipleStatusView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/multiplestatusview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    app:emptyView="@layout/custom_empty_view"
+    app:loadingView="@layout/custom_loading_view"
+    tools:context="com.jhcms.waimaiV3.activity.WaimaiBalanceActivity">
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <include layout="@layout/title" />
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:layout_weight="1"
+            android:id="@+id/adress_recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+    </com.classic.common.MultipleStatusView>
+
+
+

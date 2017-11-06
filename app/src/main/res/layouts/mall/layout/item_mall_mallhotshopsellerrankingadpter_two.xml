@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="3dp"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/shopnumber_tv"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:background="@color/red"
+            android:text="1"
+            android:textColor="#FFFFFFFF"
+            android:textSize="12dp"
+            android:gravity="center"
+            />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/shopImage"
+            android:layout_width="match_parent"
+            android:layout_height="186dp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/shopgoodsName"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:text="冰棒模具 - 绿色-恐龙款"
+            android:singleLine="true"
+            android:textColor="#FF222222"
+            android:textSize="14dp"
+            android:gravity="center|left"
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/Shopmoney_tv"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:text="￥15.8"
+            android:textColor="#FF001500"
+            android:textSize="14dp"
+            android:gravity="center|left"
+            />
+        <TextView
+          android:layout_marginTop="5dp"
+            android:id="@+id/Shopname"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:gravity="center|left"
+            android:text="哈哈玩具店"
+            android:textColor="#FF999999"
+            android:textSize="12dp"
+            />
+        
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/Addcart"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="14dp"
+        android:src="@mipmap/mall_btn_add_cart_copy"/>
+    
+</LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

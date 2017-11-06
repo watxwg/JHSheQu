@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:textSize="@dimen/dp_12"
+        android:text="老板人挺好"
+        android:gravity="center|left"
+        android:textColor="@color/title_color"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"/>
+
+</LinearLayout>

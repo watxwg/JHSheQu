@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_7"
+        android:text="已下单"
+        android:textColor="@color/text_color_gray_black"
+        android:textSize="@dimen/sp_14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_status">
+
+        <View
+            android:id="@+id/view_left"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_050"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_status"
+            android:background="#20ad20" />
+
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:src="@mipmap/run" />
+
+        <View
+            android:id="@+id/view_right"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_050"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_status"
+            android:background="#20ad20" />
+    </RelativeLayout>
+
+</RelativeLayout>

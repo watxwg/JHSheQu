@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_youhui"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/dp_5">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:background="@mipmap/index_quan_box_left">
+
+        <TextView
+            android:id="@+id/tv_youhui_prices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_youhui_prices"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_youhui_prices"
+            android:text="￥"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="3"
+        android:background="@mipmap/index_quan_box_right">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="商家优惠券"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_youhui_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="满30可用"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+        <com.coorchice.library.SuperTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_youhui"
+            android:layout_width="60dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dp_8"
+            android:gravity="center"
+            android:padding="@dimen/dp_5"
+            android:visibility="visible"
+            android:text="立即领券"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            app:corner="@dimen/dp_12"
+            app:solid="#FF4848"
+            app:stroke_color="@color/white"
+            app:stroke_width="1dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

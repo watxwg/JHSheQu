@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shap_bg_ripples_line"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_5"
+        android:text="姓名-13888888888"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/sp_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_5">
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_3"
+            android:text="学校"
+            android:textColor="@color/white"
+            app:corner="@dimen/dp_3"
+            app:solid="@color/red" />
+
+        <TextView
+            android:id="@+id/tv_userAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="@dimen/dp_10"
+            android:text="w挖来看看经济活动jksdljfsldjfslw挖来看看经济活动jksdljfsldjfsl"
+            android:textColor="@color/second_txt_color"
+            android:textSize="@dimen/dp_12" />
+    </LinearLayout>
+
+</LinearLayout>

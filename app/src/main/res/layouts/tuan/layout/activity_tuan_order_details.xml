@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.classic.common.MultipleStatusView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/statusview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:emptyView="@layout/custom_empty_view"
+    app:errorView="@layout/custom_error_view"
+    app:loadingView="@layout/custom_loading_view"
+    app:noNetworkView="@layout/custom_no_network_view">
+
+    <LinearLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        tools:context="com.jhcms.tuangou.activity.TuanOrderDetailsActivity">
+
+        <include layout="@layout/title" />
+
+        <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.jhcms.common.widget.ListenerScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--商品-->
+                    <LinearLayout
+                        android:id="@+id/ll_details_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/shap_bg_ripples_line"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dp_12"
+                        android:paddingRight="@dimen/dp_12">
+
+                        <ImageView
+                            android:id="@+id/iv_detail_logo"
+                            android:layout_width="60dp"
+                            android:layout_height="@dimen/dp_60"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/home_banner_default" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/dp_10">
+
+                            <TextView
+                                android:id="@+id/tv_detail_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:text="团购测试商品名称"
+                                android:textColor="@color/title_color"
+                                android:textSize="@dimen/dp_16" />
+
+                            <TextView
+                                android:id="@+id/tv_detail_num"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:drawableRight="@mipmap/icon_arrow_right"
+                                android:gravity="center|left"
+                                android:text="1份"
+                                android:textColor="@color/second_txt_color"
+                                android:textSize="@dimen/dp_12" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_detail_prices"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="￥25"
+                                    android:textColor="@color/shop_guige"
+                                    android:textSize="@dimen/sp_16"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_detail_old_prices"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/dp_10"
+                                    android:background="@drawable/tuan_gridview_line"
+                                    android:gravity="center"
+                                    android:text="￥25"
+                                    android:textColor="@color/third_txt_color"
+                                    android:textSize="@dimen/sp_12" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--团购券-->
+                    <LinearLayout
+                        android:id="@+id/ll_voucher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_60"
+                            android:background="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:paddingLeft="@dimen/dp_12">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:text="团购卷"
+                                    android:textColor="@color/title_color"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:id="@+id/tv_valid_period"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/white"
+                                    android:gravity="center_vertical"
+                                    android:text="有效期至 2014-15-10 10:29"
+                                    android:textColor="@color/second_txt_color"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/iv_voucher"
+                                android:layout_width="@dimen/dp_60"
+                                android:layout_height="@dimen/dp_60"
+                                android:src="@mipmap/tuan_btn_lookquan" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="@dimen/dp_050"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:paddingRight="@dimen/dp_12">
+
+                            <TextView
+                                android:id="@+id/tv_voucher_code"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/dp_12"
+                                android:text="购券码201412345677899"
+                                android:textColor="@color/title_color"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/tv_voucher_status"
+                                android:layout_width="@dimen/dp_50"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="待使用"
+                                android:textColor="@color/second_txt_color"
+                                android:textSize="@dimen/dp_14" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp_12"
+                        android:paddingRight="@dimen/dp_12"
+                        android:text="商家信息"
+                        android:textColor="@color/title_color"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/tv_shop_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/dp_050"
+                        android:background="@color/white"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/dp_12"
+                        android:paddingRight="@dimen/dp_12"
+                        android:text="此处显示团购该商品下的商家"
+                        android:textColor="@color/title_color"
+                        android:textSize="@dimen/sp_14" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginTop="@dimen/dp_050"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dp_12">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="14dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/tuan_icon_location" />
+
+                        <TextView
+                            android:id="@+id/tv_shop_locatioin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/shap_bg_ripples_line"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dp_10"
+                            android:text="政务区天鹅湖万达广场望钱路交口55号五彩大楼5单元904室" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/icon_view" />
+
+                        <ImageView
+                            android:id="@+id/iv_shop_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shap_bg_ripples_line"
+                            android:paddingLeft="@dimen/dp_10"
+                            android:paddingRight="@dimen/dp_10"
+                            android:src="@mipmap/tuan_btn_call" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_050"
+                        android:background="@color/gray"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/white"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/dp_12"
+                            android:paddingRight="@dimen/dp_12"
+                            android:text="订单详情"
+                            android:textColor="@color/title_color"
+                            android:textSize="@dimen/sp_14" />
+
+
+                        <LinearLayout style="@style/tuan_order_detail">
+
+                            <TextView
+                                android:layout_width="@dimen/dp_80"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="订单号:"
+                                android:textSize="@dimen/sp_12" />
+
+                            <TextView
+                                android:id="@+id/tv_order_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:paddingLeft="@dimen/dp_10"
+                                android:text="123456789"
+                                android:textSize="@dimen/sp_12" />
+                        </LinearLayout>
+
+
+                        <LinearLayout style="@style/tuan_order_detail">
+
+                            <TextView
+                                android:layout_width="@dimen/dp_80"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="购买手机号："
+                                android:textSize="@dimen/sp_12" />
+
+                            <TextView
+                                android:id="@+id/tv_user_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:paddingLeft="@dimen/dp_10"
+                                android:text="123456789"
+                                android:textSize="@dimen/sp_12" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_order_time"
+                            style="@style/tuan_order_detail">
+
+                            <TextView
+                                android:layout_width="@dimen/dp_80"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="付款时间："
+                                android:textSize="@dimen/sp_12" />
+
+                            <TextView
+                                android:id="@+id/tv_order_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_40"
+                                android:gravity="center|left"
+                                android:paddingLeft="@dimen/dp_10"
+                                android:text="123456789"
+                                android:textSize="@dimen/sp_12" />
+                        </LinearLayout>
+
+
+                        <LinearLayout style="@style/tuan_order_detail">
+
+                            <TextView
+                                android:layout_width="@dimen/dp_80"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="数量："
+                                android:textSize="@dimen/sp_12" />
+
+                            <TextView
+                                android:id="@+id/tv_order_num"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_40"
+                                android:gravity="center|left"
+                                android:paddingLeft="@dimen/dp_10"
+                                android:text="123456789"
+                                android:textSize="@dimen/sp_12" />
+                        </LinearLayout>
+
+
+                        <LinearLayout style="@style/tuan_order_detail">
+
+                            <TextView
+                                android:layout_width="@dimen/dp_80"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="总价："
+                                android:textSize="@dimen/dp_12" />
+
+                            <TextView
+                                android:id="@+id/tv_order_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_40"
+                                android:gravity="center|left"
+                                android:paddingLeft="@dimen/dp_10"
+                                android:text="￥25"
+                                android:textSize="@dimen/dp_12" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.jhcms.common.widget.ListenerScrollView>
+        </com.liaoinstan.springview.widget.SpringView>
+
+        <LinearLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center|right"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_cancelorder"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/shap_bg_line_white_radius_small"
+                android:gravity="center"
+                android:text="取消订单"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/dp_14" />
+
+            <TextView
+                android:id="@+id/tv_play"
+                android:layout_width="70dp"
+                android:layout_height="@dimen/dp_30"
+                android:background="@drawable/shap_bg_white_guige_radius_small"
+                android:gravity="center"
+                android:text="付款"
+                android:textColor="@color/shop_guige" />
+        </LinearLayout>
+    </LinearLayout>
+</com.classic.common.MultipleStatusView>

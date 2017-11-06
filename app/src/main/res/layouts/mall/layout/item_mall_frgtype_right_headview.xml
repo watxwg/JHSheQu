@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="40dp">
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/hotTitle_tv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="热销商品排行"
+        android:textColor="#FF333333"
+        android:textSize="13dp"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/LoadMore"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="更多  "
+        android:background="@color/white"
+        android:gravity="center|right"
+        android:textColor="#FF666666"
+        android:padding="10dp"
+        android:drawableRight="@mipmap/icon_arrow_right"
+        android:textSize="12dp"/>
+
+
+</LinearLayout>

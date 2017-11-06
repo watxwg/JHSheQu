@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.classic.common.MultipleStatusView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/multiplestatusview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:emptyView="@layout/custom_empty_view"
+    app:errorView="@layout/custom_error_view"
+    app:loadingView="@layout/custom_loading_view"
+    app:noNetworkView="@layout/custom_no_network_view"
+    tools:context="com.jhcms.run.activity.RunOrderDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/shopcar_line"
+        android:orientation="vertical">
+        <!--标题-->
+        <include
+            android:id="@+id/title"
+            layout="@layout/title" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swiperefreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_btn_status"
+            android:layout_below="@+id/title">
+
+            <com.jhcms.common.widget.ListenerScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/background"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dp_10">
+
+                    <!--订单状态-->
+                    <include layout="@layout/run_order_status" />
+                    <!--物品信息-->
+                    <include layout="@layout/run_order_article" />
+                    <!--支付信息-->
+                    <include layout="@layout/run_order_payment" />
+                    <!--配送信息-->
+                    <include layout="@layout/run_order_distribution" />
+                    <!--订单信息-->
+                    <include layout="@layout/run_order_information" />
+                    <!--评价信息-->
+                    <include layout="@layout/run_order_evaluation" />
+                </LinearLayout>
+            </com.jhcms.common.widget.ListenerScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <ImageView
+            android:id="@+id/iv_call"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_100"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@mipmap/btn_fr_order_call" />
+
+        <!--按钮状态-->
+        <LinearLayout
+            android:id="@+id/ll_btn_status"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_one"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_30"
+                android:background="@drawable/shap_bg_line_white_radius_small"
+                android:gravity="center"
+                android:text="@string/mall_确认收货"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/mall_font_12" />
+
+            <TextView
+                android:id="@+id/tv_pay"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@drawable/tuan_bg_white_with_yellow2_boder"
+                android:gravity="center"
+                android:text="去支付"
+                android:textColor="@color/color_yan"
+                android:textSize="12sp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.classic.common.MultipleStatusView>

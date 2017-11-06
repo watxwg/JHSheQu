@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tuan_home"
+        android:icon="@mipmap/icon_run"
+        android:title="@string/跑腿" />
+    <item
+        android:id="@+id/tuan_order"
+        android:icon="@mipmap/icon_run_order"
+        android:title="@string/订单" />
+    <item
+        android:id="@+id/tuan_mine"
+        android:icon="@mipmap/icon_run_mine"
+        android:title="@string/我的" />
+</menu>

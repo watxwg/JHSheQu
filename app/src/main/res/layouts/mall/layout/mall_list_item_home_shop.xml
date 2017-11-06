@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:layout_marginRight="@dimen/dp_30"
+    android:layout_marginTop="@dimen/dp_10">
+    <ImageView
+        android:id="@+id/iv_shop_logo"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:scaleType="fitXY"
+        android:src="@mipmap/pic_pro_bigx"
+        />
+    <TextView
+        android:id="@+id/tv_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/mall_font_12"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="@color/mall_black_second"
+        android:text="嘻哈小卖部"/>
+
+
+</LinearLayout>

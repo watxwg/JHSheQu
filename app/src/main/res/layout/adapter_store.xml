@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <com.jhcms.common.widget.ListenerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/shop_logo"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_12"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_toRightOf="@+id/shop_logo"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_12">
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="辣府"
+                android:lines="1"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/song_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@mipmap/icon_peisong_platform"/>
+
+            <RatingBar
+                android:id="@+id/shop_star"
+                style="@style/eva_rating_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_tv"
+                android:layout_marginTop="@dimen/dp_6"
+                android:numStars="5"
+                android:isIndicator="true"
+                android:rating="0"
+                android:stepSize="0.2" />
+
+            <TextView
+                android:id="@+id/score_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_tv"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_toRightOf="@+id/shop_star"
+                android:text="4.0分"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/sell_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_tv"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_toRightOf="@+id/score_tv"
+                android:text="月售200份"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/cost_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sell_count"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="￥5起送/配送费0元"
+                android:textColor="@color/second_txt_color"
+                android:textSize="@dimen/sp_12" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/sell_count"
+                android:layout_marginTop="@dimen/dp_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="666米/"
+                    android:textColor="@color/second_txt_color"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/pei_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30分钟"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/first_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="新用户首单优惠5元"
+                android:textColor="@color/second_txt_color"
+                android:textSize="@dimen/sp_12"
+                android:drawablePadding="@dimen/dp_5"
+                android:drawableLeft="@mipmap/icon_store_first"/>
+
+
+            <TextView
+                android:id="@+id/active_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_10"
+                android:text="3个活动"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/sp_12"
+                android:drawablePadding="@dimen/dp_5"
+                android:drawableRight="@mipmap/icon_black_arrow_down"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/jian_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:text="新用户首单优惠5元"
+            android:textColor="@color/second_txt_color"
+            android:textSize="@dimen/sp_12"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableLeft="@mipmap/icon_store_jian"/>
+
+        <TextView
+            android:id="@+id/quan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:text="新用户首单优惠5元"
+            android:visibility="gone"
+            android:textColor="@color/second_txt_color"
+            android:textSize="@dimen/sp_12"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableLeft="@mipmap/icon_store_quan"/>
+
+        <TextView
+            android:id="@+id/tuan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:text="新用户首单优惠5元"
+            android:visibility="gone"
+            android:textColor="@color/second_txt_color"
+            android:textSize="@dimen/sp_12"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableLeft="@mipmap/icon_store_tuan"/>
+
+        <TextView
+            android:id="@+id/discount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:text="新用户首单优惠5元"
+            android:visibility="gone"
+            android:textColor="@color/second_txt_color"
+            android:textSize="@dimen/sp_12"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableLeft="@mipmap/icon_store_discount"/>
+
+        <TextView
+            android:id="@+id/pay_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:text="新用户首单优惠5元"
+            android:visibility="gone"
+            android:textColor="@color/second_txt_color"
+            android:textSize="@dimen/sp_12"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableLeft="@mipmap/icon_store_pay"/>
+
+    </LinearLayout>
+  </LinearLayout>
+
+    </com.jhcms.common.widget.ListenerScrollView>
+
+
+</LinearLayout>

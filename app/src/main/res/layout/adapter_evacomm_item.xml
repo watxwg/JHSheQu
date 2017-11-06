@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/dp_12"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_12"
+        android:text="肉末茄子"
+        android:textColor="@color/second_txt_color"
+        android:textSize="@dimen/sp_12" />
+
+    <ImageView
+        android:id="@+id/iv_good"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_28"
+        android:layout_marginRight="@dimen/dp_12"
+        android:src="@drawable/selector_evacomm_good" />
+
+    <ImageView
+        android:id="@+id/iv_bad"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_28"
+        android:layout_marginRight="@dimen/dp_12"
+        android:src="@drawable/selector_evacomm_bad" />
+
+</LinearLayout>

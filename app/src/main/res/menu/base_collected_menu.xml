@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_collect"
+        android:icon="@mipmap/navbar_btn_collect_no"
+        android:title="收藏"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_collected"
+        android:icon="@mipmap/navbar_btn_collect_yes"
+        android:title="已收藏"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_share"
+        android:icon="@mipmap/navbar_btn_share"
+        android:title="分享"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@mipmap/icon_search"
+        android:title="搜索商品"
+        app:showAsAction="ifRoom" />
+
+    <!--<item
+        android:id="@+id/action_item2"
+        android:title="@string/item_02"
+        app:showAsAction="never">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/item1"
+                    android:title="item1" />
+                <item
+                    android:id="@+id/item2"
+                    android:title="item2" />
+                <item
+                    android:id="@+id/item3"
+                    android:title="item3" />
+            </group>
+        </menu>
+    </item>-->
+</menu>

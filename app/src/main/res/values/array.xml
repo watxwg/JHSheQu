@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="url">
+        <item>http://img.zcool.cn/community/01d28457d621800000018c1bb7877e.jpg</item>
+        <item>http://img.zcool.cn/community/01ae5656e1427f6ac72531cb72bac5.jpg</item>
+        <item>http://img.zcool.cn/community/0166c756e1427432f875520f7cc838.jpg</item>
+        <item>http://img.zcool.cn/community/018fdb56e1428632f875520f7b67cb.jpg</item>
+        <item>http://img.zcool.cn/community/01c8dc56e1428e6ac72531cbaa5f2c.jpg</item>
+        <item>http://img.zcool.cn/community/01fd2756e142716ac72531cbf8bbbf.jpg</item>
+        <item>http://img.zcool.cn/community/0192a557a352ef0000012e7ed104e4.jpg</item>
+    </array>
+    <string-array name="shopName">
+        <item>店铺壹</item>
+        <item>店铺贰</item>
+        <item>店铺叁</item>
+        <item>店铺肆</item>
+        <item>店铺伍</item>
+        <item>店铺陆</item>
+        <item>店铺柒</item>
+        <item>店铺捌</item>
+        <item>店铺玖</item>
+        <item>店铺拾</item>
+    </string-array>
+    <string-array name="shopScore">
+        <item>8</item>
+        <item>6</item>
+        <item>9</item>
+        <item>12</item>
+        <item>7</item>
+        <item>12</item>
+        <item>7</item>
+        <item>12</item>
+        <item>7</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="shopSaleNum">
+        <item>652</item>
+        <item>9514</item>
+        <item>15632</item>
+        <item>85</item>
+        <item>9514</item>
+        <item>15632</item>
+        <item>85</item>
+        <item>9514</item>
+        <item>85</item>
+        <item>56</item>
+    </string-array>
+    <string-array name="startingPrice">
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="freightPrice">
+        <item>3</item>
+        <item>3.5</item>
+        <item>2.3</item>
+        <item>1</item>
+        <item>0.7</item>
+        <item>3</item>
+        <item>3.5</item>
+        <item>2.3</item>
+        <item>1</item>
+        <item>0.7</item>
+    </string-array>
+    <string-array name="serviceTime">
+        <item>20</item>
+        <item>35</item>
+        <item>20</item>
+        <item>50</item>
+        <item>32</item>
+        <item>20</item>
+        <item>35</item>
+        <item>20</item>
+        <item>50</item>
+        <item>32</item>
+    </string-array>
+    <string-array name="distance">
+        <item>123</item>
+        <item>456</item>
+        <item>789</item>
+        <item>741</item>
+        <item>852</item>
+        <item>123</item>
+        <item>456</item>
+        <item>789</item>
+        <item>741</item>
+        <item>852</item>
+    </string-array>
+    <string-array name="shangmenfuwu">
+        <item>保洁服务</item>
+        <item>洗护服务</item>
+        <item>家电清洗</item>
+        <item>家居保养</item>
+        <item>家电维修</item>
+        <item>安装维修</item>
+        <item>开锁换锁</item>
+        <item>管道疏通</item>
+        <item>水电洁具</item>
+    </string-array>
+    <string-array name="sousuoshangpin">
+        <item>1冰棒模具 - 绿色收纳盒-恐龙款2016家居新款</item>
+        <item>2绿野台灯</item>
+        <item>3仙人掌家居收纳盒</item>
+        <item>4阿莱西鸟嘴壶</item>
+        <item>5冰棒模具 - 绿色收纳盒-恐龙款2016家居新款</item>
+        <item>6绿野台灯</item>
+        <item>7仙人掌家居收纳盒</item>
+        <item>8阿莱西鸟嘴壶</item>
+    </string-array>
+    <string-array name="paytype">
+        <item>支付宝支付</item>
+        <item>微信支付</item>
+        <item>余额支付</item>
+    </string-array>
+    <string-array name="payment">
+        <item>在线支付</item>
+        <item>货到付款</item>
+    </string-array>
+    <string-array name="coupon">
+        <item>5元优惠券</item>
+        <item>15元优惠券</item>
+        <item>20元优惠券</item>
+        <item>不使用优惠券</item>
+    </string-array>
+    <string-array name="red">
+        <item>5元红包</item>
+        <item>15元红包</item>
+        <item>20元红包</item>
+        <item>不使用红包</item>
+    </string-array>
+
+</resources>

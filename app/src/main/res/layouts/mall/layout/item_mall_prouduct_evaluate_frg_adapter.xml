@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+        <ImageView
+            android:id="@+id/userimage"
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_36"
+            android:src="@mipmap/ic_launcher"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="张三丰"
+                android:textColor="@color/second_txt_color"
+                android:textSize="12dp"
+                android:gravity="center|left"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/standard"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:text="规格：蓝色-大号"
+                    android:textColor="@color/third_txt_color"
+                    android:textSize="12dp"
+                    />
+                <TextView
+                    android:id="@+id/usertime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="2016/06/05 05:05"
+                    android:textColor="@color/third_txt_color"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        
+    </LinearLayout>
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:gravity="center|left"
+        android:text="用了，超级好用，下次还光临"
+        android:textColor="@color/title_color"/>
+
+</LinearLayout>

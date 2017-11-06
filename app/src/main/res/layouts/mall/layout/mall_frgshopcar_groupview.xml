@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/headview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@android:color/white" >
+
+        <CheckBox
+            android:id="@+id/determine_chekbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:button="@drawable/mall_check_box_bg"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:gravity="center"
+            android:minHeight="38dp"
+            android:minWidth="38dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp_15"
+            android:drawableLeft="@mipmap/mall_btn_shop"
+            android:id="@+id/tv_source_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/determine_chekbox"
+            android:background="@android:color/white"
+            android:drawablePadding="10dp"
+            android:gravity="center|left"
+            android:text="第八号当铺"
+            android:textColor="@color/title_color"
+            android:textSize="14dp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"/>
+        <ImageView
+            android:id="@+id/shopdelete"
+            android:paddingLeft="15dp"
+            android:paddingRight="@dimen/dp_15"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_14"
+            android:src="@mipmap/mall_btn_delete"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+    <com.jhcms.common.widget.ListViewForScrollView
+        android:id="@+id/sonlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

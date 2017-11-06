@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_120"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dp_5">
+
+    <ImageView
+        android:id="@+id/iv_product_logo"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_120"
+        android:scaleType="fitXY"
+        android:src="@mipmap/pic_pro_bigx" />
+    <TextView
+        android:id="@+id/tv_index"
+        android:layout_width="@dimen/dp_14"
+        android:layout_height="@dimen/dp_14"
+        android:textSize="@dimen/mall_font_12"
+        android:background="@color/mall_color_ff3300"
+        android:text="1"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_product_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_product_logo"
+        android:text="冰棒模具 - 绿色收纳盒-恐龙款2016家居新款"
+        android:textSize="@dimen/mall_font_14"
+        android:layout_marginLeft="@dimen/dp_11"
+        android:layout_marginRight="@dimen/dp_11"
+        android:textColor="@color/mall_black_second"
+        android:layout_marginTop="@dimen/dp_7"/>
+    <TextView
+        android:id="@+id/tv_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mall_red"
+        android:textSize="@dimen/mall_font_12"
+        android:text="￥15.8"
+        android:layout_alignLeft="@id/tv_product_desc"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_22"
+        />
+    <TextView
+        android:id="@+id/tv_sale_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/mall_font_12"
+        android:textColor="@color/mall_gray"
+        android:text="已售200"
+        android:layout_alignTop="@id/tv_product_price"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_10"
+        />
+
+</RelativeLayout>

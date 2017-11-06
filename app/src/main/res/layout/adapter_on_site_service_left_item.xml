@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/select_line_vl_current" />
+
+    <TextView
+        android:id="@+id/tv_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_bg_filling_white_bg"
+        android:padding="@dimen/dp_20"
+        android:text="保洁服务"
+        android:textColor="@color/selector_text_theme_dark"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

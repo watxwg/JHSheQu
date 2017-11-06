@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!--字体标题颜色-->
+    <color name="title_color">#333333</color>
+    <color name="second_txt_color">#666666</color>
+    <color name="third_txt_color">#999999</color>
+    <color name="txt_color">#222222</color>
+    <color name="four_color">#242424</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="offwhite">#01000000</color>
+    <color name="home_one_text">#F37CD8</color>
+    <color name="home_two_text">#9B9F9D</color>
+    <color name="black">#000000</color>
+    <color name="view_color">#CCCCCC</color>
+
+
+    <!-- 主题色 -->
+    <color name="theme_color">#20AD20</color>
+    <color name="pink">#ff658d</color>
+    <color name="red">#ff3333</color>
+    <color name="orange">#eb6203</color>
+
+    <color name="green">#FF34A350</color>
+    <color name="blue">#7fd323</color>
+    <color name="blue_color">#2240bd</color>
+    <color name="org">#e67c00</color>
+    <color name="background">#EDF2F5</color>
+    <color name="mine_tranlate">#4d000000</color>
+    <color name="yellow">#d5da3b</color>
+    <color name="soft_opaque">#30000000</color>
+    <color name="dark_blue">#0a9986</color>
+    <color name="gray">#f4f4f4</color>
+    <!-- 间隔线 -->
+    <color name="parting_line">#e5e5e5</color>
+    <color name="bg_line">#F7F8F9</color>
+    <color name="pingjia">#FF9900</color>
+
+    <color name="gray_bg">#9BA3B4</color>
+    <color name="lineGray">#ededed</color>
+    <color name="list_item">#EAEAEA</color>
+    <color name="line">#DEDEDE</color>
+    <color name="shopcar_line">#E6EAED</color>
+    <color name="photopicker_common_primary">#f3f3f3</color>
+
+
+    <color name="photopicker_green_light">#a5d143</color>
+    <color name="photopicker_selected_bg">#44000000</color>
+    <color name="light_theme_color">#009000</color>
+    <color name="themColor">#20AD20</color>
+    <color name="home_bottombar_topdrive">#eaeaea</color>
+    <!--顶部分割线的颜色-->
+    <color name="home_bottombar_bg">#FFFFFF</color>
+    <!--底部bar的背景样式-->
+    <color name="home_bottombar_font">#222222</color>
+    <!--底部bar字体颜色-->
+
+    <color name="transparence">@android:color/transparent</color>
+    <color name="selecttextcolor">#4A4C4D</color>
+    <color name="color_yan">#ff3300</color>
+    <color name="color_blue">#14AAE4</color>
+    <color name="shop_bg">#2C3A52</color>
+    <color name="shop_bg_below">#1E2939</color>
+    <color name="shop_cart">#EEF2F5</color>
+
+    <color name="translucent_background">#33000000</color>
+    <color name="header_normal">#ffe74c3c</color>
+    <color name="header_pressed">#ffc0392b</color>
+    <color name="shop_guige">#FF6600</color>
+    <color name="shenhui">#AAAAAA</color>
+    <color name="menu_section_header">#FFDDDDDD</color>
+    <color name="address">#01000000</color>
+    <color name="qing">#eae6ed</color>
+    <color name="round">#e6e6e6</color>
+
+
+    <!--商城-->
+    <color name="mall_Theme">#ff20ad20</color>
+    <color name="mall_gray">#ff999999</color>
+
+    <color name="mall_black">#ff333333</color>
+    <color name="mall_black_second">#ff222222</color>
+
+    <color name="mall_red">#ffff3300</color>
+
+    <color name="mall_white_devider">#ffe6eaed</color>
+
+    <color name="mall_color_666666">#666666</color>
+    <color name="mall_color_999999">#999999</color>
+    <color name="mall_color_e6eaed">#e6eaed</color>
+    <color name="mall_color_40B43C">#40b43c</color>
+    <color name="mall_color_fda043">#fda043</color>
+    <color name="mall_color_f96720">#f96720</color>
+    <color name="mall_color_ff6600">#ff6600</color>
+    <color name="mall_color_ff7700">#ff7700</color>
+    <color name="mall_color_e6e6e6">#e6e6e6</color>
+    <color name="mall_color_00000a">#0000000a</color>
+    <color name="mall_color_4a4c4d">#4a4c4d</color>
+    <color name="mall_color_f7f7f7">#f7f7f7</color>
+    <color name="mall_color_f4f4f4">#f4f4f4</color>
+    <color name="mall_color_f2f2f2">#f2f2f2</color>
+    <color name="mall_color_ff3300">#ff3300</color>
+    <color name="mall_color_14aae4">#14aae4</color>
+    <color name="mall_color_ff9900">#ff9900</color>
+    <color name="mall_color_ff2257">#ff2257</color>
+    <color name="mall_color_fafafa">#fafafa</color>
+    <color name="mall_color_cccccc">#cccccc</color>
+    <color name="mall_color_d7dbde">#d7dbde</color>
+    <color name="mall_color_66000000">#66000000</color>
+    <!--背景色-->
+    <color name="mall_color_eaeff3">#eaeff3</color>
+    <color name="color_dedede">#dedede</color>
+    <color name="color_ff973b">#ff973b</color>
+
+    <color name="color_3eb73f">#3eb73f</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_ff8800">#ff8800</color>
+
+    <color name="color_ff9000">#ff9000</color>
+    <color name="color_979797">#979797</color>
+    <color name="color_4d4d4d">#4d4d4d</color>
+
+</resources>

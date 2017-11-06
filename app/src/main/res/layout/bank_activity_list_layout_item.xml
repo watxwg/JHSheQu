@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout_card_item"
+        android:background="@mipmap/bank_list_item_bg"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="@dimen/dp_13"
+        android:layout_marginLeft="@dimen/dp_13"
+        android:layout_width="match_parent"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:layout_height="@dimen/dp_100">
+        <ImageView
+            android:id="@+id/Iv_Bank"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@mipmap/card_visa02"
+            />
+        <LinearLayout
+           android:padding="@dimen/dp_15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/Tv_BankName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="此处显示商家名称"
+                android:gravity="center|left"
+                android:textSize="@dimen/sp_16"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/Tv_bankNumber"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="123456"
+                android:textSize="14sp"
+                android:gravity="center|left"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

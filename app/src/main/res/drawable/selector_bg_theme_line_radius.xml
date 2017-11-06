@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/shap_bg_white_theme_radius_small" android:state_selected="true" />
+    <item android:drawable="@drawable/shap_bg_line_white_radius_small" />
+
+</selector>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="@dimen/dp_2"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@mipmap/home_banner_default" />
+
+    <TextView
+        android:id="@+id/tv_album"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_gravity="bottom"
+        android:background="#50000000"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+</FrameLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/dp_12">
+
+        <TextView
+            android:id="@+id/textnan"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:text="@string/男"
+            android:textSize="@dimen/dp_16" />
+
+        <ImageView
+            android:id="@+id/nanImage"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="30dp"
+            android:src="@mipmap/index_selector_disable" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/dp_12">
+
+        <TextView
+            android:id="@+id/textnv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:text="@string/女"
+            android:textSize="@dimen/dp_16" />
+
+        <ImageView
+            android:id="@+id/nvImage"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="30dp"
+            android:src="@mipmap/index_selector_disable" />
+    </LinearLayout>
+
+</LinearLayout>

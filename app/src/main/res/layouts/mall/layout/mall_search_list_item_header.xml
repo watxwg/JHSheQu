@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/dp_12"
+    android:layout_marginRight="@dimen/dp_12">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center|left"
+        android:paddingLeft="9dp"
+        android:text="热门搜索"
+        android:textColor="@color/mall_color_666666"
+        android:textSize="12dp"
+        android:drawableLeft="@mipmap/mall_icon_hot"
+        android:drawablePadding="@dimen/dp_8"/>
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/tag_flow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:max_select="1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingLeft="9dp"
+            android:text="搜索历史"
+            android:textColor="@color/mall_color_666666"
+            android:textSize="12dp"
+            android:drawableLeft="@mipmap/mall_icon_history"
+            android:drawablePadding="@dimen/dp_8"/>
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="56dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@mipmap/mall_btn_delete"
+            android:gravity="center|right"
+            android:paddingLeft="5dp"
+            android:text="清除"
+            android:textColor="#FF333333"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

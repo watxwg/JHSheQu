@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center|top"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="165dp"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:background="@drawable/waimai_select_recharge_item">
+        <TextView
+            android:id="@+id/moeny"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="50"
+            android:textColor="#ff8800"
+            android:textSize="@dimen/dp_20"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/送"
+                android:textSize="18dp"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/songmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="50"
+                android:textColor="#ff8800"
+                android:textSize="18dp"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/红包"
+                android:textSize="18dp"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

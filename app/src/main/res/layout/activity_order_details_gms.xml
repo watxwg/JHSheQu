@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.classic.common.MultipleStatusView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/multiplestatusview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:emptyView="@layout/custom_empty_view"
+    app:errorView="@layout/custom_error_view"
+    app:loadingView="@layout/custom_loading_view"
+    app:noNetworkView="@layout/custom_no_network_view"
+    tools:context="com.jhcms.waimaiV3.activity.OrderDetailsActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/shopcar_line"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/title"
+            layout="@layout/title" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/SwipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title">
+
+            <com.jhcms.common.widget.ListenerScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/title"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/order_datail_status" />
+
+                    <include layout="@layout/order_detail_map_gms" />
+
+                    <include layout="@layout/order_detail_shop" />
+
+                    <include layout="@layout/order_detail_delivery_info" />
+
+                    <include layout="@layout/order_detail_order_info" />
+
+                </LinearLayout>
+            </com.jhcms.common.widget.ListenerScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_saoma"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:src="@mipmap/btn_fr_ma" />
+
+            <ImageView
+                android:id="@+id/iv_redbag"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:src="@mipmap/btn_fr_redbag" />
+
+            <ImageView
+                android:id="@+id/iv_call"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:src="@mipmap/btn_fr_order_call" />
+
+            <ImageView
+                android:id="@+id/iv_complain"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:src="@mipmap/btn_fr_complain" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</com.classic.common.MultipleStatusView>

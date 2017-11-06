@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.jhcms.tuangou.activity.TuanOfferToPayActivity">
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@drawable/bg_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="消费金额："
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/sp_14" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_buf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dp_10"
+                android:gravity="center|right"
+                android:text="￥"
+                android:textColor="@color/shop_guige"
+                android:textSize="@dimen/sp_20"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/dealMoney_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="right|center"
+                android:inputType="number|numberDecimal"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_10"
+                android:textColor="@color/shop_guige"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:text="@string/询问服务员后输入"
+                android:textColor="@color/third_txt_color"
+                android:textSize="@dimen/sp_14" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/YesOrNoConcessions_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_12">
+
+        <ImageView
+            android:id="@+id/YesOrNoConcessions_tv"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/tuan_radio" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/dp_5"
+            android:text="@string/输入不享受优惠金额"
+            android:textColor="@color/themColor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/NoConcessions_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/sp_12"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="@string/不享受优惠金额"
+                android:textColor="@color/title_color" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_symbol"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:gravity="center|right"
+                    android:text="￥"
+                    android:textColor="@color/shop_guige"
+                    android:textSize="@dimen/sp_20"
+                    android:visibility="gone" />
+
+                <com.jhcms.common.widget.MyEditText
+                    android:id="@+id/NoConcessionsMoney_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="@null"
+                    android:gravity="right|center"
+                    android:inputType="number|numberDecimal"
+                    android:paddingRight="@dimen/dp_10"
+                    android:textColor="@color/shop_guige"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/dp_14" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_quan_manjian"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/bg_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_quan_manjian"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="消费金额面50减5元"
+            android:textColor="@color/title_color" />
+
+        <TextView
+            android:id="@+id/ConcessionsMoney_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center"
+            android:paddingRight="@dimen/dp_10"
+            android:textColor="@color/shop_guige"
+            android:textSize="@dimen/dp_14" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@drawable/bg_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="@string/实付金额"
+            android:textColor="@color/title_color" />
+
+        <TextView
+            android:id="@+id/truePaymoney_ed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center"
+            android:paddingRight="@dimen/dp_10"
+            android:text="￥0.00"
+            android:textColor="@color/shop_guige"
+            android:textSize="@dimen/dp_14" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/SubmitButton_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_tuan__offer_to_pay_butn_bg"
+        android:gravity="center"
+        android:text="确认买单"
+        android:textColor="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.jhcms.mall.activity.MallSalesAfterActivity">
+    <include
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        layout="@layout/common_title"
+        />
+<LinearLayout
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginLeft="@dimen/dp_12"
+    android:layout_marginRight="@dimen/dp_12"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="@dimen/dp_80">
+    <ImageView
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:src="@mipmap/mall_my_icon_tuikuan"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <TextView
+            android:paddingLeft="@dimen/dp_15"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="仅退款"
+            android:textSize="@dimen/dp_16"
+            android:textColor="@color/title_color"
+            android:gravity="center|left"/>
+        <TextView
+            android:paddingLeft="@dimen/dp_15"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/dp_12"
+            android:text="未收到货，或与商家协商后申请"
+            android:textColor="@color/second_txt_color"
+            android:gravity="center|left"/>
+
+
+    </LinearLayout>
+    <ImageView
+        android:paddingRight="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/icon_arrow_right"/>
+</LinearLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/dp_80">
+        <ImageView
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:src="@mipmap/mall_my_icon_tuihuokuan"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:paddingLeft="@dimen/dp_15"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="退货退款"
+                android:textSize="@dimen/dp_16"
+                android:textColor="@color/title_color"
+                android:gravity="center|left"/>
+            <TextView
+                android:paddingLeft="@dimen/dp_15"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/dp_12"
+                android:text="已收到货，需要退还已收到的货物"
+                android:textColor="@color/second_txt_color"
+                android:gravity="center|left"/>
+
+
+        </LinearLayout>
+        <ImageView
+            android:paddingRight="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_arrow_right"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

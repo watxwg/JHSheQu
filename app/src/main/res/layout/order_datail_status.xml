@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingLeft="@dimen/dp_15"
+    android:paddingRight="@dimen/dp_15"
+    android:paddingTop="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/tv_order_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/dp_9"
+        android:drawableRight="@mipmap/icon_arrow_right"
+        android:text="--"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/sp_16" />
+
+    <LinearLayout
+        android:id="@+id/order_description"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_5"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="去支付"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <cn.iwgang.countdownview.CountdownView
+            android:id="@+id/countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:gravity="center"
+            app:isHideTimeBackground="true"
+            app:isShowMinute="true"
+            app:isShowSecond="true"
+            app:isTimeTextBold="true"
+            app:suffixGravity="center"
+            app:suffixMinute="分"
+            app:suffixSecond="秒"
+            app:suffixTextColor="@color/red"
+            app:suffixTextSize="12sp"
+            app:timeBgBorderRadius="@dimen/dp_5"
+            app:timeBgColor="@color/white"
+            app:timeTextColor="@color/red" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="内付款,超时订单将自动关闭"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center">
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/stv_four"
+            style="@style/order_status_supertv"
+            android:layout_marginRight="@dimen/dp_15"
+            android:text="申请客服介入"
+            android:visibility="gone"
+            app:corner="@dimen/dp_4"
+            app:solid="@color/white"
+            app:stroke_color="@color/shopcar_line"
+            app:stroke_width="1dp" />
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/again"
+            style="@style/order_status_supertv"
+            android:layout_marginRight="@dimen/dp_15"
+            android:text="再来一单"
+            android:visibility="gone"
+            app:corner="@dimen/dp_4"
+            app:solid="@color/white"
+            app:stroke_color="@color/shopcar_line"
+            app:stroke_width="1dp" />
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/stv_three"
+            style="@style/order_status_supertv"
+            android:layout_marginRight="@dimen/dp_15"
+            android:text="取消订单"
+            android:visibility="gone"
+            app:corner="@dimen/dp_4"
+            app:solid="@color/white"
+            app:stroke_color="@color/shopcar_line"
+            app:stroke_width="1dp" />
+
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/stv_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingLeft="@dimen/dp_18"
+            android:paddingRight="@dimen/dp_18"
+            android:paddingTop="@dimen/dp_8"
+            android:text="去支付"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:visibility="gone"
+            app:corner="@dimen/dp_4"
+            app:solid="#ff6600"
+            app:stroke_color="@color/white"
+            app:stroke_width="1dp" />
+
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/Stvfive"
+            style="@style/order_status_supertv"
+            android:layout_marginRight="@dimen/dp_15"
+            android:text="确认送达"
+            android:visibility="gone"
+            app:corner="@dimen/dp_4"
+            app:solid="@color/white"
+            app:stroke_color="@color/shopcar_line"
+            app:stroke_width="1dp" />
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/StvSix"
+            style="@style/order_status_supertv"
+            android:layout_marginRight="@dimen/dp_15"
+            android:text="申请退款"
+            android:visibility="gone"
+            app:corner="@dimen/dp_4"
+            app:solid="@color/white"
+            app:stroke_color="@color/shopcar_line"
+            app:stroke_width="1dp" />
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/StvSeven"
+            style="@style/order_status_supertv"
+            android:layout_marginRight="@dimen/dp_15"
+            android:text="查看评价"
+            android:visibility="gone"
+            app:corner="@dimen/dp_4"
+            app:solid="@color/white"
+            app:stroke_color="@color/shopcar_line"
+            app:stroke_width="1dp" />
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/StvEight"
+            style="@style/order_status_supertv"
+            android:layout_marginRight="@dimen/dp_15"
+            android:text="去评价"
+            app:corner="@dimen/dp_4"
+            app:solid="@color/white"
+            app:stroke_color="@color/shopcar_line"
+            app:stroke_width="1dp" />
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/stv_two"
+            style="@style/order_status_supertv"
+            android:layout_marginRight="@dimen/dp_15"
+            android:text="催单"
+            app:corner="@dimen/dp_4"
+            app:solid="@color/white"
+            app:stroke_color="@color/shopcar_line"
+            app:stroke_width="1dp" />
+    </LinearLayout>
+
+</LinearLayout>

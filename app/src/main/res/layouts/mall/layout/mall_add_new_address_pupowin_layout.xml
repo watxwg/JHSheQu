@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg_white"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/name_popuwidow"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="省份"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/dp_16"
+            android:paddingLeft="@dimen/dp_20"
+            android:gravity="center_vertical"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+        <ListView
+            android:id="@+id/lisview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="取消"
+            android:textColor="#14AAE4"
+            android:textSize="@dimen/dp_16"
+            android:paddingLeft="@dimen/dp_20"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="智能排序">智能排序</string>
+    <string name="距离最近">距离最近</string>
+    <string name="销量最高">销量最高</string>
+    <string name="评分最高">评分最高</string>
+    <string name="起送价最低">起送价最低</string>
+    <string name="最早送达">最早送达</string>
+    <string name="我的收货地址">我的收货地址</string>
+    <string name="我的优惠券">我的优惠券</string>
+</resources>

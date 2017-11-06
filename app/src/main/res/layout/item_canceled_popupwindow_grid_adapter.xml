@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textview"
+        android:layout_height="30dp"
+        android:layout_width="@dimen/dp_80"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:textColor="@color/title_color"
+        android:background="@drawable/select_bt_bg_tuan"
+        android:text="临时有事"/>
+
+</LinearLayout>

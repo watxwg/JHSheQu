@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="250dp">
+    <ImageView
+        android:id="@+id/shopimage_iv"
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/shop_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="此处显示商品名称，省略…"
+        android:textColor="@color/title_color"
+        android:textSize="14dp"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/new_money_tv"
+            android:paddingLeft="@dimen/dp_12"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="￥15.8"
+            android:textColor="@color/themColor"
+            android:textSize="14dp"
+            android:gravity="center|left"
+            />
+        <TextView
+            android:id="@+id/older_money_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="￥25.8"
+            android:textColor="@color/third_txt_color"
+            android:textSize="12dp"
+            android:gravity="center|right"
+            android:paddingRight="12dp"
+            android:background="@drawable/mall_gray_line"
+            />
+    </LinearLayout>
+
+</LinearLayout>

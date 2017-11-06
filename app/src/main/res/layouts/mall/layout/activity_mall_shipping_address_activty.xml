@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.jhcms.mall.activity.MallShippingAddressActivty">
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/refreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.jhcms.common.widget.ListenerScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.classic.common.MultipleStatusView
+                    android:id="@+id/statusview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/background"
+                    app:emptyView="@layout/address_empty_view"
+                    app:loadingView="@layout/custom_loading_view">
+
+                    <com.jhcms.common.widget.ListViewForScrollView
+                        android:id="@+id/listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dividerHeight="@dimen/dp_10"
+                        android:listSelector="#00000000" />
+
+
+                </com.classic.common.MultipleStatusView>
+
+
+            </com.jhcms.common.widget.ListenerScrollView>
+
+
+        </com.liaoinstan.springview.widget.SpringView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/addnewaddress"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/bg_theme"
+        android:gravity="center"
+        android:text="添加收货地址"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+</LinearLayout>

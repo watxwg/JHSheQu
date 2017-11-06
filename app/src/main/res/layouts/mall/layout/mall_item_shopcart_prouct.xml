@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:scrollbars="none"
+    android:id="@+id/hsv"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+    <LinearLayout
+        android:id="@+id/ll_content"
+       android:layout_gravity="center|left"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/mall_check_box_bg"
+            android:checked="true"
+            android:gravity="center"
+            android:minHeight="64dp"
+            android:minWidth="40dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_marginLeft="@dimen/dp_5"
+            android:id="@+id/iv_adapter_list_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+            <LinearLayout
+                android:gravity="center|left"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="12dp"
+                android:layout_weight="1">
+                <TextView
+                android:id="@+id/tv_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="31dp"
+                android:layout_marginTop="9dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                    android:singleLine="true"
+                android:text="第八号当铺美女一枚"
+                android:textColor="@color/title_color"
+                android:textSize="12dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="规格：粉色ML"
+                        android:textColor="@color/third_txt_color"
+                        android:textSize="12dp"
+                        />
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="￥15"
+                        android:gravity="center|right"
+                        android:textColor="@color/themColor"
+                        android:textSize="14dp"/>
+                    <TextView
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:id="@+id/shopcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x1"
+                        android:textColor="@color/title_color"
+                        android:textSize="12dp"
+                        android:gravity="center|right"/>
+                </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_action"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="#FFFF0000"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="1dp"
+        android:textColor="@android:color/white"
+        android:paddingRight="20dp"
+        android:textSize="@dimen/dp_20"
+        android:text="删除" />
+    </LinearLayout>
+    </LinearLayout>
+
+
+</HorizontalScrollView>

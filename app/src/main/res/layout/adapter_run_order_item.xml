@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_15">
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/stv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_2"
+            android:text="帮我买"
+            android:textColor="@color/white"
+            app:corner="@dimen/dp_2"
+            app:solid="@color/shop_guige" />
+
+        <TextView
+            android:id="@+id/tv_order_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/tv_order_status"
+            android:layout_toRightOf="@+id/stv_type"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="香烟一包 中华中华中华中华中华中华中华中华 需要小票"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_order_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="待支付"
+            android:textColor="@color/mall_red"
+            android:textSize="@dimen/sp_12" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_050"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10">
+
+            <ImageView
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_gou" />
+
+            <TextView
+                android:id="@+id/tv_gou_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_8"
+                android:text="安徽省合肥市蜀山区莲花社区管理委员会莲花路电子商务产业园E座四楼" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5">
+
+            <ImageView
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_fa" />
+
+            <TextView
+                android:id="@+id/tv_fa_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_8"
+                android:text="安徽省合肥市蜀山区莲花社区管理委员会莲花路电子商务产业园E座四楼" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_050"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10">
+
+        <LinearLayout
+            android:id="@+id/ll_pei_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="跑腿费:"
+                android:textColor="@color/third_txt_color"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_pei_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥12.00"
+                android:textColor="@color/shop_guige"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="骑手汤姆正在飞速赶往目的地，请耐心等待"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_one"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_30"
+            android:background="@drawable/shap_bg_line_white_radius_small"
+            android:gravity="center"
+            android:text="@string/mall_确认收货"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/mall_font_12" />
+
+        <TextView
+            android:id="@+id/tv_pay"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@drawable/tuan_bg_white_with_yellow2_boder"
+            android:gravity="center"
+            android:text="去支付"
+            android:textColor="@color/color_yan"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+</LinearLayout>

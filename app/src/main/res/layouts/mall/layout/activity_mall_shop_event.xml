@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jhcms.mall.activity.MallShopEventActivity">
+    <include
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        layout="@layout/tuan_title_layout"
+        />
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.jhcms.common.widget.ListenerScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <com.jhcms.common.widget.ListViewForScrollView
+            android:paddingTop="@dimen/dp_10"
+            android:id="@+id/listview"
+            android:dividerHeight="@dimen/dp_10"
+            android:divider="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.jhcms.common.widget.ListViewForScrollView>
+        </com.jhcms.common.widget.ListenerScrollView>
+  </com.liaoinstan.springview.widget.SpringView>
+</LinearLayout>

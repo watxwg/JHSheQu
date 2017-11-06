@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="120dp">
+    <ImageView
+        android:id="@+id/favorite_iv"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_120"
+        android:src="@mipmap/ic_launcher"/>
+    <LinearLayout
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_12"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/favoritetitlecontemt_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="冰棒模具 - 绿色收纳盒-恐龙款2016家居新款"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/dp_14"
+            />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/foaoritestandard_tv"
+                    android:text="规格：粉色ML"
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/dp_12"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:text="$50"
+                        android:textSize="@dimen/dp_14"
+                        android:textColor="@color/themColor"/>
+                    <TextView
+                        android:id="@+id/sellconut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:text="已售1280"
+                        android:paddingLeft="18.1dp"
+                        android:textSize="@dimen/dp_12"
+                      />
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/attention"
+                android:layout_width="60dp"
+                android:layout_height="@dimen/dp_30"
+                android:textColor="@color/second_txt_color"
+                android:text="取消关注"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:background="@drawable/bg_mall"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

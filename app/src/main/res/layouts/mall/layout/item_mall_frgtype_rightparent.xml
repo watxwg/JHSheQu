@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+    <include
+        android:background="@color/white"
+        android:id="@+id/hotview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      layout="@layout/item_mall_frgtype_right_headview"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        />
+        <com.jhcms.common.widget.ListViewForListView
+            android:id="@+id/rightparent_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:clickable="false"
+            >
+
+        </com.jhcms.common.widget.ListViewForListView>
+
+</LinearLayout>

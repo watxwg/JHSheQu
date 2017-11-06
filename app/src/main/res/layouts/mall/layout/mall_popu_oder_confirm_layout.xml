@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/popudismiss"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/mall_btn_close"
+            android:layout_width="29dp"
+            android:layout_height="29dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_50"
+            android:text="选择优惠券"
+            android:textColor="@color/title_color"
+            android:textSize="16dp"
+            android:gravity="center"
+            />
+        <ImageView
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_width="29dp"
+            android:layout_height="29dp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+    <com.jhcms.common.widget.ListViewForScrollView
+        android:id="@+id/popuListview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.jhcms.common.widget.ListViewForScrollView>
+
+
+</LinearLayout>

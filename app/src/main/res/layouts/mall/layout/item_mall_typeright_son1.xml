@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red">
+            <TextView
+                android:id="@+id/TopNuber_tv"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:background="#FFFF3300"
+                android:text="1"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:textColor="@color/white"/>
+
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/hot_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/ic_launcher"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/hotTitle_tv"
+            android:layout_marginTop="@dimen/dp_2"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_20"
+            android:gravity="center|left"
+            android:text="冰棒模具 - 绿色-恐龙款…"
+            android:singleLine="true"
+            android:textColor="#FF222222"
+            android:textSize="14dp"/>
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/hotmoney_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="￥15.8"
+                android:textColor="#ed6262"
+                android:paddingLeft="10dp"
+                android:textSize="14dp"
+                />
+            <TextView
+                android:id="@+id/soldout_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="已售1280"
+                android:textColor="#FF999999"
+                android:gravity="center|right"
+                android:textSize="12dp"
+                android:paddingRight="10dp"
+                />
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/hotshopname_tv"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="哈哈玩具店"
+            android:gravity="center|left"
+            android:textColor="#FF999999"
+            android:textSize="12dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

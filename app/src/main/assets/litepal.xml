@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="shopCart"></dbname>
+
+    <version value="2"></version>
+
+    <list>
+        <!--这里是类映射-->
+        <mapping class="com.jhcms.waimaiV3.litepal.Shop"></mapping>
+        <mapping class="com.jhcms.waimaiV3.litepal.Product"></mapping>
+        <mapping class="com.jhcms.waimaiV3.litepal.SearhContent"></mapping>
+        <mapping class="com.jhcms.mall.litepal.MallSearchHistory"></mapping>
+    </list>
+</litepal>

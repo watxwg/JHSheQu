@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF2F5"
+    android:orientation="vertical"
+    tools:context="com.jhcms.mall.activity.MallCouponActivity">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jhcms.common.widget.ListenerScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.jhcms.common.widget.ListViewForListView
+                android:id="@+id/lsitview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null">
+
+            </com.jhcms.common.widget.ListViewForListView>
+        </com.jhcms.common.widget.ListenerScrollView>
+    </com.liaoinstan.springview.widget.SpringView>
+</LinearLayout>

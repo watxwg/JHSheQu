@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/left_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/choose_line"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/theme_color"/>
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/sp_16"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/second_txt_color"
+            android:text="菜品一"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

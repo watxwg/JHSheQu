@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_city_head"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:padding="@dimen/dp_10"
+    android:text="当前选择城市:合肥"
+    android:textColor="@color/title_color"
+    android:textSize="@dimen/sp_14" />
